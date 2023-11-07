@@ -4,16 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4DE91E63"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/writeOutResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="32dp"
+        android:text="Hejhopp!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollTheDice"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <Button
+        android:id="@+id/rollTheDice"
+        android:layout_width="200dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#E91E63"
+        android:text="Roll the dice!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterSidesOfDice" />
+
+    <EditText
+        android:id="@+id/enterSidesOfDice"
+        android:layout_width="156dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="248dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="How many sides do you want on the dice?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterSidesOfDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

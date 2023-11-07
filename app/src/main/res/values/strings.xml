@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DiceTest</string>
+    <string name="dice_result">The dice is showing %1$d!</string>
 </resources>
